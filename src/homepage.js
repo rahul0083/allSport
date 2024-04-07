@@ -110,11 +110,8 @@ const Homepage = () => {
         />
       </div>
 
-      <div
-        class='container mt-5'
-
-        // style={{border: `5px solid red`, marginTop:"100px"}}
-      >
+      {/* Latest News */}
+      <div class='container mt-sm-6'>
         <h3 class='display-1 fw-normal text-primary mb-9 text-start'>
           Latest News
         </h3>
