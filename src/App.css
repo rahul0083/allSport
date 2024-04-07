@@ -49,7 +49,7 @@ background-color: white;
 
 .medal-tally-text{
 font-family: Paris2024-Variable;
-font-size: 100px;
+font-size: 6vw;
 font-weight: 760;
 line-height: 120px;
 text-align: left;
@@ -77,7 +77,7 @@ color: #8F8250;
 
 .schedule-text{
   font-family: Paris2024-Variable;
-font-size: 100px;
+font-size: 6vw;
 font-weight: 760;
 line-height: 120px;
 text-align: left;
@@ -86,15 +86,17 @@ color: #AC88A7;
 }
 
 .card-mascot {
-  width: 1656px;
-  height: 752px;
+  width: 100%; /* Adjust width for responsiveness */
+  height: auto; /* Adjust height for responsiveness */
   background-color: white;
   border-radius: 30px !important;
-  margin: 132px;
+  margin: 10%; /* Adjust margin for responsiveness */
 }
+
 .mascot-text{
+  display: flex;
   font-family: Paris2024-Variable;
-  font-size: 80px;
+  font-size: 4vw;
   font-weight: 760;
   line-height: 105px;
   color: #81378F;
@@ -103,7 +105,7 @@ color: #AC88A7;
 }
 .description-text{
   font-family: Noto Sans;
-font-size: 16px;
+font-size: 1.6vw;
 font-weight: 400;
 line-height: 24px;
 color: #212121;
@@ -171,29 +173,28 @@ border-radius: 40px;
   background-color: rgba(12, 46, 94, 1);
 }
 
-@media screen and (max-width: 768px) {
-  .font-paris2024 {
-    font-size: 6vw;
-  }
-}
-@media screen and (max-width: 768px) {
-  .App-header {
-    font-size: calc(10px + 1.5vmin); /* Adjusted font size for smaller screens */
-  }
-  .font-paris2024 {
-    font-size: 6vw; /* Adjusted font size for smaller screens */
-  }
-  .medal-tally-text {
-    font-size: 6vw; /* Adjusted font size for smaller screens */
-  }
-  .schedule-text {
-    font-size: 6vw; /* Adjusted font size for smaller screens */
-  }
-}
-
-
+/* Apply specific styles for small screens (mobile devices) */
 @media (max-width: 576px) {
-  .mt-sm-6 {
-    margin-top: 4rem;
+  .font-paris2024 {
+    font-size: 8vw; /* Adjust font size for small screens */
+  }
+  
+  .medal-tally-text,
+  .schedule-text {
+    font-size: 10vw; /* Adjust font size for small screens */
+  }
+  
+  .mascot-text {
+    font-size: 6vw; /* Adjust font size for small screens */
+  }
+  
+  .description-text {
+    font-size: 3vw; /* Adjust font size for small screens */
+  }
+
+  .card-mascot {
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 100%; /* Adjust max-width for responsiveness */
+    margin: 10% auto; /* Adjust margin for responsiveness */
   }
 }

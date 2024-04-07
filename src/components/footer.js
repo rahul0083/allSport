@@ -11,7 +11,7 @@ function Footer() {
           <div className="mt-4">
             <p className="h5 fw-light lh-26 mb-5">2024</p>
             <p className="h5 fw-light lh-26 mb-5">DOWNLOAD THE APP</p>
-            <div className="fs-4 mt-4 d-flex mt-6">
+            <div className="fs-4 mt-4 d-flex mt-6 justify-content-center">
               <a href="#" className="me-2 text-white"><img src="../Vectorx.svg" alt="Facebook Icon" /></a>
               <a href="#" className="me-2"><img src="../Vectorfacebook.svg" alt="Instagram Icon" /></a>
               <a href="#" className=""><img src="../Groupinstagram.svg" alt="Twitter Icon" /></a>

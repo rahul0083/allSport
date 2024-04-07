@@ -1,31 +1,31 @@
 export const cardData = () => [
     {   
-        image: "",
+        image: "./Rectangle 4542news1.svg",
         title: "Swasti Singh’s gold powers Odisha past 50 medals",
         description: "Odisha won another medal on Wednesday at the 37th National Games in Goa thanks to the skill of Swasti Singh."
     },
     {   
-        image: "",
+        image: "./Rectangle 4542news5.svg",
         title: "Swasti Singh’s gold powers Odisha past 50 medals",
         description: "Odisha won another medal on Wednesday at the 37th National Games in Goa thanks to the skill of Swasti Singh."
     },
     {   
-        image: "",
+        image: "./Rectangle 4542news3.svg",
         title: "Swasti Singh’s gold powers Odisha past 50 medals",
         description: "Odisha won another medal on Wednesday at the 37th National Games in Goa thanks to the skill of Swasti Singh."
     },
     {   
-        image: "",
+        image: "./Rectangle 4542news4.svg",
         title: "Swasti Singh’s gold powers Odisha past 50 medals",
         description: "Odisha won another medal on Wednesday at the 37th National Games in Goa thanks to the skill of Swasti Singh."
     },
     {   
-        image: "",
+        image: "./Rectangle 4542news5.svg",
         title: "Swasti Singh’s gold powers Odisha past 50 medals",
         description: "Odisha won another medal on Wednesday at the 37th National Games in Goa thanks to the skill of Swasti Singh."
     },
     {   
-        image: "",
+        image: "./Rectangle 4542news6.svg",
         title: "Swasti Singh’s gold powers Odisha past 50 medals",
         description: "Odisha won another medal on Wednesday at the 37th National Games in Goa thanks to the skill of Swasti Singh."
     }
