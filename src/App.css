@@ -1,3 +1,4 @@
+/* Base styles */
 .App {
   text-align: center;
   background-color: rgba(128, 128, 128, 0.082);
@@ -44,18 +45,17 @@
 }
 
 .medal-tally{
-background-color: white;
+  background-color: white;
 }
 
-/* .medal-tally-text{
-font-family: Paris2024-Variable;
-font-size: 100px;
-font-weight: 760;
-line-height: 120px;
-text-align: left;
-color: #8F8250;
-
-} */
+.medal-tally-text{
+  font-family: Paris2024-Variable;
+  font-size: 100px;
+  font-weight: 760;
+  line-height: 120px;
+  text-align: left;
+  color: #8F8250;
+}
 
 .btn-custom-color {
   background-color: #81378F !important;
@@ -72,56 +72,60 @@ color: #8F8250;
   border-color: #81378F !important;
   color: #81378F !important;
   border-radius: 30px !important;
-
 }
 
-/* .schedule-text{
+.schedule-text{
   font-family: Paris2024-Variable;
-font-size: 100px;
-font-weight: 760;
-line-height: 120px;
-text-align: left;
-color: #AC88A7;
+  font-size: 100px;
+  font-weight: 760;
+  line-height: 120px;
+  text-align: left;
+  color: #AC88A7;
+}
 
-} */
-
-/* .card-mascot {
-  width: 1656px;
-  height: 752px;
+.card-mascot {
+  width: 100%; /* Full width on smaller screens */
+  height: auto; /* Auto height */
   background-color: white;
   border-radius: 30px !important;
-  margin: 132px;
+  margin: 20px; /* Adjusted margin */
 }
 .mascot-text{
   font-family: Paris2024-Variable;
-  font-size: 80px;
+  font-size: 6vw; /* Adjusted font size for smaller screens */
   font-weight: 760;
-  line-height: 105px;
+  line-height: 1.2;
   color: #81378F;
+}
 
-  
-} */
 .description-text{
   font-family: Noto Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-color: #212121;
-
+  font-size: 14px; /* Adjusted font size for smaller screens */
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212121;
 }
 
 .vertical-line{
-  border-left: 1px solid #959595; 
-  height: 100%;
+  display: none; /* Removed vertical line for smaller screens */
 }
 
 .sports{
-  background-color:  rgba(128, 128, 128, 0.082)
+  background-color:  rgba(128, 128, 128, 0.082);
 }
+
+/* Media query for screens smaller than 768px */
 @media screen and (max-width: 768px) {
+  .App-header {
+    font-size: calc(10px + 1.5vmin); /* Adjusted font size for smaller screens */
+  }
   .font-paris2024 {
-    font-size: 6vw;
+    font-size: 6vw; /* Adjusted font size for smaller screens */
+  }
+  .medal-tally-text {
+    font-size: 6vw; /* Adjusted font size for smaller screens */
+  }
+  .schedule-text {
+    font-size: 6vw; /* Adjusted font size for smaller screens */
   }
 }
-
-
