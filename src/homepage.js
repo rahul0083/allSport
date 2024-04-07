@@ -355,22 +355,21 @@ const Homepage = () => {
       {/* Competiion Zone */}
       <div className="medal-tally mt-5">
         <Row>
-          <Col className="d-flex flex-column justify-content-center align-items-center p-5">
+          <Col className="d-flex flex-column justify-content-center p-5">
             <p className="text-start mascot-text">COMPETITION ZONE</p>
 
-            <div class="card bg-warning" style={{ width: "18rem" }}>
+            <div class="card" style={{ width: "18rem", background: "#FFDF8C" }}>
               <img src="./competitionzone.svg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">DELHI</h5>
-                <p class="card-text  text-start fs-8">
+                <p class="card-text">
                   The Indira Gandhi Arena, formerly known as the Indraprashtha
                   Stadium, is located at the Indraprastha Estate in the eastern
                   region of New Delhi. It is the largest indoor sports arena in
                   India and among the largest in Asia.
                 </p>
-                <a href="#" class="btn bg-white align-items-start ">
-                  EXPLORE
-                </a>
+               
+                <button className="btn bg-white d-flex justify-content-start">EXPLORE</button>
               </div>
             </div>
           </Col>
@@ -384,6 +383,8 @@ const Homepage = () => {
           </Col>
         </Row>
       </div>
+
+      {/* Photo gallery */}
     </>
   );
 };
