@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgba(128, 128, 128, 0.082);
 }
 
 .App-logo {
@@ -38,12 +39,12 @@
 
 .font-paris2024 {
   font-family: Paris2024-Variable;
-  font-size: 4vw; /* Use viewport width for font size to make it responsive */
-  line-height: 1.2; /* Adjust line height as needed */
+  font-size: 4vw; 
+  line-height: 1.2; 
 }
 
 .medal-tally{
-background-color:  rgba(128, 128, 128, 0.082);
+background-color: white;
 }
 
 .medal-tally-text{
@@ -112,6 +113,10 @@ color: #212121;
 .vertical-line{
   border-left: 1px solid #959595; 
   height: 100%;
+}
+
+.sports{
+  background-color:  rgba(128, 128, 128, 0.082)
 }
 @media screen and (max-width: 768px) {
   .font-paris2024 {

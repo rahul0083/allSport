@@ -136,3 +136,64 @@ export const medalData = {
         venue:"Indira Gandhi International Stadium"
     },
   ]
+
+  export const sportPayload=[
+    {
+      image:"./archeryImage.svg",
+      sportName:"Archery"
+    },
+    {
+      image:"./archeryImage.svg",
+
+      sportName:"Archery"
+    },
+    {
+      image:"./archeryImage.svg",
+
+      sportName:"Archery"
+    },
+    {
+      image:"./archeryImage.svg",
+
+      sportName:"Archery"
+    }, {
+      image:"./archeryImage.svg",
+
+      sportName:"Archery"
+    },
+    {
+      image:"./archeryImage.svg",
+
+      sportName:"Archery"
+    },
+    {
+      image:"./archeryImage.svg",
+
+      sportName:"Archery"
+    },
+    {
+      image:"./archeryImage.svg",
+
+      sportName:"Archery"
+    },
+    {
+      image:"./archeryImage.svg",
+
+      sportName:"Archery"
+    }, {
+      image:"./archeryImage.svg",
+
+      sportName:"Archery"
+    }
+    , {
+      image:"./archeryImage.svg",
+
+      sportName:"Archery"
+    }
+    ,
+    {
+      image:"./archeryImage.svg",
+
+      sportName:"Archery"
+    }
+  ]

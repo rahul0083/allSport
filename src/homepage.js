@@ -2,18 +2,27 @@ import React, { useEffect, useState } from "react";
 import Header from "./components/header";
 import { Row, Col, Table, Card } from "react-bootstrap";
 import CustomCard from "./components/card";
-import { cardData, medalData, schedulePayload } from "./components/constant";
+import {
+  cardData,
+  medalData,
+  schedulePayload,
+  sportPayload,
+} from "./components/constant";
+import Sportcards from "./components/sportcards";
 
 const Homepage = () => {
   const [newsData, setNewsData] = useState([]);
   const [medalTallyData, setMedalTallyData] = useState([]);
   const [scheduleData, setScheduleData] = useState([]);
+  const [sportData, setSportData] = useState([]);
 
   useEffect(() => {
     setNewsData(cardData);
     setMedalTallyData(medalData);
     setScheduleData(schedulePayload);
+    setSportData(sportPayload);
   }, []);
+
   return (
     <>
       <div className="position-relative">
@@ -214,7 +223,7 @@ const Homepage = () => {
           </tbody>
         </Table>
       </div>
-      <div className="medal-tally d-flex justify-content-center align-items-center">
+      <div className="d-flex justify-content-center align-items-center">
         <Card className="card-mascot">
           <Row>
             <Col className="d-flex flex-column justify-content-center align-items-center">
@@ -251,53 +260,130 @@ const Homepage = () => {
       </div>
 
       {/* Join Conversation Games */}
+      <div className="medal-tally mt-5">
+        <Row>
+          <Col className="d-flex flex-column justify-content-start p-5">
+            <p className="text-start">Join the</p>
+            <p className="text-start mascot-text">CONVERSATION</p>
+            <p className="text-start">#uttrakhandgames2024</p>
+            <Row>
+              <Col>
+                All Together
+                <p className="fw-bold mt-5">28</p> STATES
+              </Col>
 
-      <Row>
-        <Col className="d-flex flex-column justify-content-start p-5">
-          <p className="text-start">Join the</p>
-          <p className="text-start mascot-text">CONVERSATION</p>
-          <p className="text-start">#uttrakhandgames2024</p>
-          <Row>
-            <Col>
-              All Together
-              <p className="fw-bold mt-5">28</p> STATES
-             
-
-            </Col>
-            
-            <Col className="vertical-line">
-              COLLECTIVELY
-              <p className="fw-bold mt-5">8+1</p>Union Territories & Control Boards
-
-            </Col>
-            <Col className="vertical-line">
-
-              WE ARE UNIFIED
-              <p className="fw-bold mt-5">8000+</p>ATHLETES
-            </Col>
-          </Row>
-          <hr />
-          <Row>
+              <Col className="vertical-line">
+                COLLECTIVELY
+                <p className="fw-bold mt-5">8+1</p>Union Territories & Control
+                Boards
+              </Col>
+              <Col className="vertical-line">
+                WE ARE UNIFIED
+                <p className="fw-bold mt-5">8000+</p>ATHLETES
+              </Col>
+            </Row>
+            <hr />
+            <Row>
+              <Col>
+                COMPETITION
+                <p className="fw-bold mt-5">22</p>DAYS
+              </Col>
+              <Col className="vertical-line">
+                SERVICE
+                <p className="fw-bold mt-5">4000+</p>VOLUNTEERS
+              </Col>
+            </Row>
+          </Col>
           <Col>
-              COMPETITION
-              <p className="fw-bold mt-5">22</p>DAYS
+            <img
+              src="./rectanglecricket.svg"
+              className="img-fluid "
+              alt="rectangluardome"
+              style={{ zIndex: 1 }}
+            />
+          </Col>
+        </Row>
+      </div>
+      {/* Sports */}
+      <div className="sports">
+        <div className="mt-5" style={{ background: "white" }}>
+          <Row className="mt-5">
+            <Col>
+              <p className="mascot-text">SPORTS</p>
             </Col>
-            <Col className="vertical-line">
-
-              SERVICE
-              <p className="fw-bold mt-5">4000+</p>VOLUNTEERS
+            <Col>
+              <button className="btn btn-custom-color">View More</button>
             </Col>
           </Row>
-        </Col>
-        <Col>
-          <img
-            src="./rectanglecricket.svg"
-            className="img-fluid "
-            alt="rectangluardome"
-            style={{ zIndex: 1 }}
-          />
-        </Col>
-      </Row>
+
+          <div className="container mt-5">
+            <div className="row">
+              {sportData?.map((item, i) => (
+                <div key={i} className="col-md-2 mb-4">
+                  <Sportcards imageUrl={item?.image} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Follow Us */}
+      <div className="medal-tally mt-5">
+        <Row>
+          <Col className="d-flex flex-column justify-content-center p-5">
+            <p className="text-start mascot-text">FOLLOW US</p>
+            <p className="d-flex justify-content-start">
+              <img src="./Vectorx.svg" className="img-fluid ms-2" />
+              <img src="./Vectorfacebook.svg" className="img-fluid ms-2" />
+              <img src="./Vectorbird.svg" className="img-fluid ms-2" />
+              <img src="./Groupinstagram.svg" className="img-fluid ms-2" />
+              <img src="./Vectorlinkedin.svg" className="img-fluid ms-2" />
+            </p>
+            <p className="text-start">#uttrakhandgames2024</p>
+          </Col>
+          <Col>
+            <img
+              src="./followus.svg"
+              className="img-fluid "
+              alt="rectangluardome"
+              style={{ zIndex: 1 }}
+            />
+          </Col>
+        </Row>
+      </div>
+      {/* Competiion Zone */}
+      <div className="medal-tally mt-5">
+        <Row>
+          <Col className="d-flex flex-column justify-content-center align-items-center p-5">
+            <p className="text-start mascot-text">COMPETITION ZONE</p>
+
+            <div class="card bg-warning" style={{ width: "18rem" }}>
+              <img src="./competitionzone.svg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">DELHI</h5>
+                <p class="card-text  text-start fs-8">
+                  The Indira Gandhi Arena, formerly known as the Indraprashtha
+                  Stadium, is located at the Indraprastha Estate in the eastern
+                  region of New Delhi. It is the largest indoor sports arena in
+                  India and among the largest in Asia.
+                </p>
+                <a href="#" class="btn bg-white align-items-start ">
+                  EXPLORE
+                </a>
+              </div>
+            </div>
+          </Col>
+          <Col>
+            <img
+              src="./groupmap.svg"
+              className="img-fluid "
+              alt="rectangluardome"
+              style={{ zIndex: 1 }}
+            />
+          </Col>
+        </Row>
+      </div>
     </>
   );
 };
