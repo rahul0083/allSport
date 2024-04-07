@@ -10,6 +10,7 @@ import {
 } from './components/constant';
 import Sportcards from './components/sportcards';
 import PhotoSlider from './components/slider';
+import Footer from './components/footer';
 
 const Homepage = () => {
   const [newsData, setNewsData] = useState([]);
@@ -456,6 +457,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
