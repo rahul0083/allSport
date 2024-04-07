@@ -221,15 +221,22 @@ const Homepage = () => {
       </div>
 
       {/* SCHEDULE */}
-      <div className='d-flex align-items-center px-5'>
-        <span className='schedule-text px-5'>SCHEDULE</span>
-        <select className='form-select' aria-label='Default select example'>
-          <option selected>Select a date</option>
-        </select>
-        <select className='form-select' aria-label='Default select example'>
-          <option selected>All Games</option>
-        </select>
-      </div>
+      <Row className='d-flex align-items-center px-5'>
+        <Col xs={12} sm={4} className='px-5'>
+          <span className='schedule-text'>SCHEDULE</span>
+        </Col>
+        <Col xs={12} sm={4}>
+          <select className='form-select' aria-label='Default select example'>
+            <option selected>Select a date</option>
+          </select>
+        </Col>
+        <Col xs={12} sm={4}>
+          <select className='form-select' aria-label='Default select example'>
+            <option selected>All Games</option>
+          </select>
+        </Col>
+      </Row>
+      {/* schedule table */}
       <div className='d-flex align-items-center mt-4 px-5'>
         <Table striped bordered hover size='sm' className='table-responsive'>
           <thead>
@@ -238,8 +245,8 @@ const Homepage = () => {
               <th>Time</th>
               <th>Sports</th>
               <th>Events</th>
-              <th>Round/Pool</th>
-              <th>Venue</th>
+              <th className='d-none d-md-table-cell'>Round/Pool</th>
+              <th className='d-none d-md-table-cell'>Venue</th>
             </tr>
           </thead>
 
@@ -250,13 +257,15 @@ const Homepage = () => {
                 <td>{item?.time}</td>
                 <td>{item?.sports}</td>
                 <td>{item?.event}</td>
-                <td>{item?.roundpoll}</td>
-                <td>{item?.venue}</td>
+                <td className='d-none d-md-table-cell'>{item?.roundpoll}</td>
+                <td className='d-none d-md-table-cell'>{item?.venue}</td>
               </tr>
             ))}
           </tbody>
         </Table>
       </div>
+
+      {/* hi i am */}
       <div className='d-flex justify-content-center align-items-center'>
         <Card className='card-mascot'>
           <Row>
