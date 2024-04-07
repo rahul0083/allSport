@@ -41,6 +41,7 @@ const Homepage = () => {
         <div className='position-absolute w-100'>
           <Header />
           <div className='d-flex justify-content-center'>
+            {/* days hour min sec */}
             <Row className='bg-white p-3 rounded-pill custom-header'>
               <Col xs={12} sm={6} className='px-5 py-2'>
                 <img src='./frame.svg' className='img-fluid' alt='frame' />
@@ -49,14 +50,20 @@ const Homepage = () => {
                 xs={12}
                 sm={6}
                 className='py-3 d-flex flex-column align-items-center'
+                // style={{border: `5px solid red`,}}
               >
-                <p className='m-0'>
+                <p className='m-0 d-none d-sm-block'>
                   <span className='mx-2'>179</span>
                   <span className='mx-2'>11</span>
                   <span className='mx-2'>56</span>
                   <span className='mx-2'>05</span>
                 </p>
                 <p className='m-0'>
+                  <span className='mx-2'>179 Days</span>
+                  <span className='mx-2'>11 Hours</span>
+                  <span className='mx-2'>56 Mins</span>
+                </p>
+                <p className='m-0 d-none d-sm-block'>
                   <span>Days</span>
                   <span>Hours</span>
                   <span>Mins</span>
@@ -65,7 +72,12 @@ const Homepage = () => {
               </Col>
             </Row>
           </div>
-          <Row className='mt-5 ms-5 d-none d-sm-block'>
+
+          {/* unleashed */}
+          <Row
+            className='mt-5 ms-5 d-none d-sm-block'
+            // style={{border: `5px solid red`,}}
+          >
             <Col className='ms-5'>
               <p className='font-paris2024 text-start text-white mt-5'>
                 The 38th National Games, Uttarakhand 2024
@@ -98,7 +110,11 @@ const Homepage = () => {
         />
       </div>
 
-      <div class='container'>
+      <div
+        class='container mt-5'
+
+        // style={{border: `5px solid red`, marginTop:"100px"}}
+      >
         <h3 class='display-1 fw-normal text-primary mb-9 text-start'>
           Latest News
         </h3>
