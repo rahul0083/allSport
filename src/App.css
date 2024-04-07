@@ -47,7 +47,7 @@
 background-color: white;
 }
 
-.medal-tally-text{
+/* .medal-tally-text{
 font-family: Paris2024-Variable;
 font-size: 100px;
 font-weight: 760;
@@ -55,7 +55,7 @@ line-height: 120px;
 text-align: left;
 color: #8F8250;
 
-}
+} */
 
 .btn-custom-color {
   background-color: #81378F !important;
@@ -75,7 +75,7 @@ color: #8F8250;
 
 }
 
-.schedule-text{
+/* .schedule-text{
   font-family: Paris2024-Variable;
 font-size: 100px;
 font-weight: 760;
@@ -83,9 +83,9 @@ line-height: 120px;
 text-align: left;
 color: #AC88A7;
 
-}
+} */
 
-.card-mascot {
+/* .card-mascot {
   width: 1656px;
   height: 752px;
   background-color: white;
@@ -100,7 +100,7 @@ color: #AC88A7;
   color: #81378F;
 
   
-}
+} */
 .description-text{
   font-family: Noto Sans;
 font-size: 16px;
@@ -123,3 +123,5 @@ color: #212121;
     font-size: 6vw;
   }
 }
+
+
