@@ -28,11 +28,93 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.custom-header {
+  width: 100%; 
+  max-width: 959px;
+  max-height: 110px; 
+  padding: 0 20px; 
+  border-radius: 80px !important;
+}
+
+.font-paris2024 {
+  font-family: Paris2024-Variable;
+  font-size: 4vw; /* Use viewport width for font size to make it responsive */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+.medal-tally{
+background-color:  rgba(128, 128, 128, 0.082);
+}
+
+.medal-tally-text{
+font-family: Paris2024-Variable;
+font-size: 100px;
+font-weight: 760;
+line-height: 120px;
+text-align: left;
+color: #8F8250;
+
+}
+
+.btn-custom-color {
+  background-color: #81378F !important;
+  border-color: #81378F;
+  color: #fff !important; 
+  border-radius: 30px !important;
+}
+.btn-custom-color:hover {
+  background-color: #6b2e76; 
+  border-color: #6b2e76;
+}
+
+.btn-custom-viewmore{
+  border-color: #81378F !important;
+  color: #81378F !important;
+  border-radius: 30px !important;
+
+}
+
+.schedule-text{
+  font-family: Paris2024-Variable;
+font-size: 100px;
+font-weight: 760;
+line-height: 120px;
+text-align: left;
+color: #AC88A7;
+
+}
+
+.card-mascot {
+  width: 1656px;
+  height: 752px;
+  background-color: white;
+  border-radius: 30px !important;
+  margin: 132px;
+}
+.mascot-text{
+  font-family: Paris2024-Variable;
+  font-size: 80px;
+  font-weight: 760;
+  line-height: 105px;
+  color: #81378F;
+
+  
+}
+.description-text{
+  font-family: Noto Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: #212121;
+
+}
+
+.vertical-line{
+  border-left: 1px solid #959595; 
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .font-paris2024 {
+    font-size: 6vw;
   }
 }
