@@ -131,9 +131,11 @@ const Homepage = () => {
           </div>
         )}
       </div>
+
+      {/* Medal Tally */}
       <div className='medal-tally'>
         <Row className='p-4 align-items-center'>
-          <Col className='py-1 px-5'>
+          <Col xs={12} md={6} className='py-1 px-5'>
             <div className='d-flex align-items-center'>
               <img
                 src='./medal-gold-belt 2medal.svg'
@@ -207,17 +209,20 @@ const Homepage = () => {
               </button>
             </div>
           </Col>
-          <Col>
+          <Col xs={12} md={6} className='d-none d-md-block'>
+            >
             <img
               src='./medaltally.svg'
               className='img-fluid'
               alt='Background'
               style={{ width: '840px', height: '951px' }}
+              // style={{ width: '100%', height: 'auto' }}
             />
           </Col>
         </Row>
       </div>
 
+      {/* SCHEDULE */}
       <div className='d-flex align-items-center px-5'>
         <span className='schedule-text px-5'>SCHEDULE</span>
         <select className='form-select' aria-label='Default select example'>
