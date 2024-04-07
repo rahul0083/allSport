@@ -3,15 +3,15 @@ import React from "react";
 const Header = () => {
   return (
     <div className="container">
-      <header className="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4">
-        <div className="d-flex align-items-center col-6 col-md-3 mb-2 mb-md-0">
-          <a href="/" className="text-white text-decoration-none ">
-            <span className="navbar-toggler-icon "></span>
+      <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+        <div className="d-flex align-items-center col-12 col-md-3 mb-2 mb-md-0 text-center text-md-start">
+          <a href="/" className="text-white text-decoration-none">
+            <span className="navbar-toggler-icon"></span>
             Menu
           </a>
         </div>
 
-        <div className="col-6 col-md-3 text-end">
+        <div className="col-12 col-md-3 text-center text-md-end">
           <img
             src="././uttarakhandlogo.svg"
             className="uttarakhand-logo img-fluid"
@@ -20,7 +20,7 @@ const Header = () => {
           />
         </div>
 
-        <div className="col-12 col-md-6 text-end d-flex align-items-center justify-content-end">
+        <div className="col-12 col-md-6 text-center text-md-end d-flex align-items-center justify-content-center justify-content-md-end">
           <ul className="nav col-auto mb-2 mb-md-0">
             <li>
               <a href="#" className="nav-link px-2 link-secondary text-white">
