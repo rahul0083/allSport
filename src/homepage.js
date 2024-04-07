@@ -209,7 +209,6 @@ const Homepage = () => {
             </div>
           </Col>
           <Col xs={12} md={6} className='d-none d-md-block'>
-            >
             <img
               src='./medaltally.svg'
               className='img-fluid'
