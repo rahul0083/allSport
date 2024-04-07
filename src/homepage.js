@@ -9,6 +9,7 @@ import {
   sportPayload,
 } from "./components/constant";
 import Sportcards from "./components/sportcards";
+import PhotoSlider from "./components/slider";
 
 const Homepage = () => {
   const [newsData, setNewsData] = useState([]);
@@ -23,6 +24,16 @@ const Homepage = () => {
     setSportData(sportPayload);
   }, []);
 
+  const images = [
+    "./Framephoto1.svg",
+    "./running.svg",
+    "Framephoto1.svg",
+    "./running.svg",
+    "./Framephoto1.svg",
+    "./running.svg",
+    "./Framephoto1.svg",
+    "./running.svg",
+  ];
   return (
     <>
       <div className="position-relative">
@@ -368,8 +379,10 @@ const Homepage = () => {
                   region of New Delhi. It is the largest indoor sports arena in
                   India and among the largest in Asia.
                 </p>
-               
-                <button className="btn bg-white d-flex justify-content-start">EXPLORE</button>
+
+                <button className="btn bg-white d-flex justify-content-start">
+                  EXPLORE
+                </button>
               </div>
             </div>
           </Col>
@@ -385,6 +398,54 @@ const Homepage = () => {
       </div>
 
       {/* Photo gallery */}
+      <div className="medal-tally mt-5 p-5">
+        <p className="text-start mascot-text">PHOTO GALLERY</p>
+
+        <PhotoSlider images={images} />
+      </div>
+
+      <div className="bg-ultraLightGray py-11 mt-5">
+  <h3 className="display-3 fw-normal mascot-text text-center mb-9 text-capitalize">GAMES PARTNERS</h3>
+  <div className="container">
+    <div className="d-flex flex-wrap align-items-baseline justify-content-between">
+      <a href="#">
+        <div className="bg-transparent border-0 text-center card">
+        
+          <div className="p-0 card-body">
+          <img className="card-img-top" src="../Seal_of_Uttarakhand1.svg" />
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div className="bg-transparent border-0 text-center card">
+          <div className="p-0 card-body">
+          <img className="card-img-top" src="../Seal_of_Uttarakhand2.svg" />
+           
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div className="bg-transparent border-0 text-center card">
+          <div className="p-0 card-body">
+          <img className="card-img-top" src="../Ministry_of_Youth_Affairs_and_Sports 2.svg" />
+
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div className="bg-transparent border-0 text-center card">
+          <div className="p-0 card-body">
+          
+          <img className="card-img-top" src="../image 26.svg" />
+
+          </div>
+        </div>
+      </a>
+    </div>
+   
+  </div>
+</div>
+
     </>
   );
 };
